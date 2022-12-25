@@ -1,0 +1,32 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 100vh;
+}
+header{
+    border: 2px solid yellow;
+    grid-column: span 5;
+}
+.sideNav{
+    border: 2px solid blue;
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.main{
+    border: 2px solid orange;
+    grid-row: span 3;
+    grid-column: span 4;
+}
+footer{
+    border: 2px solid green;
+    grid-column: span 5;
+}
