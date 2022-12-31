@@ -1,18 +1,22 @@
 html{
     font-size: 62.5%;
+    color: aliceblue;
 }
 *{
     margin: 0%;
     padding: 0%;
     list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    
 }
 
 .container{
-    background-image: url(./images/favpng_robot-high-tech-technology-mechanical-engineering.png);
-    background-repeat: no-repeat;
+    background-image: url(./images/black-3d-pattern.jpg);
+
     /* backup background color in case background img doesn't load */
-    background-color: aliceblue;
-    background-position: right;
+    background-color: rgb(173, 187, 195);
+    background-position:top ;
     background-size: 50rem;
     border: 2px solid red;
     display: grid;
@@ -22,8 +26,7 @@ html{
     "hd    hd   hd   hd "
     "sdNav main main main"
     "sdNav main main main"
-    "sdNav main main main"
-    "sdNav main main main"
+    "sdNav main main main""sdNav main main main"
     "sdNav main main main"
     "sdNav main main main"
     "sdNav ft   ft   ft"
@@ -51,7 +54,7 @@ header{
 .topMain a{
     display: flex;
     justify-content: end;
-    color: red;
+    color: aliceblue;
     font-size: large;
 
 }
