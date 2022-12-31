@@ -4,29 +4,83 @@ html{
 *{
     margin: 0%;
     padding: 0%;
+    list-style: none;
 }
+
 .container{
+    background-image: url(./images/favpng_robot-high-tech-technology-mechanical-engineering.png);
+    background-repeat: no-repeat;
+    /* backup background color in case background img doesn't load */
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 50rem;
     border: 2px solid red;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "hd    hd   hd   hd "
+    "sdNav main main main"
+    "sdNav main main main"
+    "sdNav main main main"
+    "sdNav main main main"
+    "sdNav main main main"
+    "sdNav main main main"
+    "sdNav ft   ft   ft"
+    ;
     height: 100vh;
 }
+/* mobile first layout */
 header{
     border: 2px solid yellow;
-    grid-column: span 5;
+    grid-area: hd;
+    
 }
 .sideNav{
     border: 2px solid blue;
-    grid-column: span 1;
-    grid-row: span 3;
+    grid-area: sdNav;
+    display: flex;
+    align-items: center;
+    
 }
 .main{
+    
     border: 2px solid orange;
-    grid-row: span 3;
-    grid-column: span 4;
+    grid-area: main;
+}
+.topMain a{
+    display: flex;
+    justify-content: end;
+    color: red;
+    font-size: large;
+
+}
+p, h1{
+    padding-left: 5%;
+}
+.imgGallery{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+div img{
+  height: 50%;
 }
 footer{
     border: 2px solid green;
-    grid-column: span 5;
+    display: flex;
+    align-items: flex-end;
+    grid-area: ft;
+    height: 25px;
+    justify-content: center;
 }
+footer ul li{
+    display: inline-block;
+    
+}
+/*  */
