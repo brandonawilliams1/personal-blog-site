@@ -3,48 +3,95 @@ html{
     color: aliceblue;
 }
 *{
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     list-style: none;
     text-decoration: none;
     color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2rem;
     
 }
 
+/* mobile first layout */
 .container{
     background-image: url(./images/black-3d-pattern.jpg);
-
     /* backup background color in case background img doesn't load */
     background-color: rgb(173, 187, 195);
     background-position:top ;
     background-size: 50rem;
     border: 2px solid red;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
-    "hd    hd   hd   hd "
-    "sdNav main main main"
-    "sdNav main main main"
-    "sdNav main main main""sdNav main main main"
-    "sdNav main main main"
-    "sdNav main main main"
-    "sdNav ft   ft   ft"
-    ;
+    "hd    hd   hd   hd   hd   hd   hd   hd   hd "
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "main main main main main main main main main"
+    "ft   ft   ft   ft   ft   ft   ft   ft   ft";
     height: 100vh;
 }
-/* mobile first layout */
+@media screen and (min-width: 490px){
+    .container{
+        background-image: url(./images/black-3d-pattern.jpg);
+    
+        /* backup background color in case background img doesn't load */
+        background-color: rgb(173, 187, 195);
+        background-position:top ;
+        background-size: 50rem;
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "hd    hd   hd   hd   hd   hd   hd   hd   hd "
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav main main main main main main main main"
+        "sdNav ft   ft   ft   ft   ft   ft   ft   ft";
+        height: 100vh;
+    }
+    .sideNav{
+        border: 2px solid blue;
+        grid-area: sdNav;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width:490px) {
+    .sideNav ol{
+        display: none;
+    }
+}
 header{
     border: 2px solid yellow;
     grid-area: hd;
+    color: aqua;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
     
 }
-.sideNav{
-    border: 2px solid blue;
-    grid-area: sdNav;
-    display: flex;
-    align-items: center;
-    
+header nav img{
+    height: 3rem;
 }
 .main{
     
@@ -58,21 +105,21 @@ header{
     font-size: large;
 
 }
-p, h1{
+p, h1, h2{
     padding-left: 5%;
 }
 .imgGallery{
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
+    margin: 1rem 0;
     flex-wrap: wrap;
-    height: 100px;
     width: 80%;
     margin-left: 10%;
     
 }
 div img{
-  height: 50%;
+  height: 6rem;
 }
 footer{
     border: 2px solid green;
@@ -84,6 +131,7 @@ footer{
 }
 footer ul li{
     display: inline-block;
+    padding-left: 1rem;
     
 }
 /*  */
