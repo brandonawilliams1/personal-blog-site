@@ -17,8 +17,8 @@ I'm a full stack developer...
 
 ## Screenshots
 
-![App Screenshot](CSS/images/Screenshot at 2023-01-06 20-18-44.png)
-![App Screenshot](CSS/images/Screenshot at 2023-01-06 20-19-01.png)
+![Alt text](CSS/images/Screenshot at 2023-01-06 20-18-44.png?raw=true)
+![Alt text](CSS/images/Screenshot at 2023-01-06 20-19-01.png?raw=true)
 
 
 ## Contributing
