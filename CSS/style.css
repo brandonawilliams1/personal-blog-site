@@ -21,7 +21,7 @@ html{
     background-color: rgb(173, 187, 195);
     background-position:top ;
     background-size: 50rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -47,7 +47,7 @@ html{
         background-color: rgb(173, 187, 195);
         background-position:top ;
         background-size: 50rem;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
@@ -66,7 +66,7 @@ html{
         height: 100vh;
     }
     .sideNav{
-        border: 2px solid blue;
+        border-right: 2px solid darkgray;
         grid-area: sdNav;
         display: flex;
         align-items: center;
@@ -80,7 +80,7 @@ html{
     }
 }
 header{
-    border: 2px solid yellow;
+    border-bottom: 2px solid darkgray;
     grid-area: hd;
     color: aqua;
 }
@@ -95,7 +95,7 @@ header nav img{
 }
 .main{
     
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     grid-area: main;
 }
 .topMain a{
@@ -109,7 +109,7 @@ p, h1, h2{
     padding-left: 5%;
 }
 .imgGallery{
-    border: 1px solid black;
+    border: 2px solid darkgray;
     display: flex;
     justify-content: space-around;
     margin: 1rem 0;
@@ -122,7 +122,7 @@ div img{
   height: 6rem;
 }
 footer{
-    border: 2px solid green;
+    border-top: 2px solid darkgray;
     display: flex;
     align-items: flex-end;
     grid-area: ft;
