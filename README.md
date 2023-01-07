@@ -19,7 +19,7 @@ I'm a full stack developer...
 
 ![Alt text](https://github.com/brandonawilliams1/personal-blog-site/blob/main/CSS/images/Screenshot%20at%202023-01-06%2020-18-44.png?raw=true)
 
-![Alt text](CSS/images/Screenshot at 2023-01-06 20-19-01.png?raw=true)
+![Alt text](https://github.com/brandonawilliams1/personal-blog-site/blob/main/CSS/images/Screenshot%20at%202023-01-06%2020-19-01.png?raw=true)
 
 
 ## Contributing
