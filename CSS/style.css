@@ -10,10 +10,20 @@ html{
     text-decoration: none;
     color: aliceblue;
     font-family:'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
 /* mobile first layout */
 .container{
     background-image: url(./images/black-3d-pattern.jpg);
