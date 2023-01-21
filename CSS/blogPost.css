@@ -114,16 +114,17 @@ header nav img{
 .blogPostContainer{
     display:flex;
     flex-direction: column;
+    width:100%;
     
     
 }
 .card1, .card2, .card3, .card4{
     height:min-content;
-    width: min-content;
+    width:min-content;
     margin:2% auto;
 }
 .main img{
-    width: 800px;
+    width: 500px;
 }
 .topMain a{
     display: flex;
