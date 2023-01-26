@@ -13,7 +13,6 @@ html{
     font-size: 1.2rem;
     
 }
-@import url(./style.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
 .material-symbols-outlined {
     font-variation-settings:
@@ -46,7 +45,8 @@ html{
     "main main main main main main main main main"
     "ft   ft   ft   ft   ft   ft   ft   ft   ft";
     height: 100vh;
-    overflow: scroll;
+    width: 100%;
+    
 }
 @media screen and (min-width: 490px){
     .container{
@@ -104,34 +104,33 @@ header nav img{
 }
 .main{
     
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
     grid-area: main;
-    overflow-y: scroll;
     display: flex;
-    justify-content: center;
+    width: 100%;
     
 }
 .blogPostContainer{
-    display:flex;
+    /* display:flex; */
     flex-direction: column;
     width:100%;
-    
-    
+    overflow-y: scroll;
+}
+.blogPostContainer figcaption{
+    max-width:fit-content;
+
 }
 .card1, .card2, .card3, .card4{
-    height:min-content;
-    width:min-content;
-    margin:2% auto;
+    /* height:min-content; */
+    margin: 2rem auto;
+    width: 100%;
+    
 }
-.main img{
-    width: 500px;
-}
-.topMain a{
-    display: flex;
-    justify-content: end;
-    color: aliceblue;
-    font-size: large;
 
+.main img{
+    width: 30rem;
+    max-width: 100%;
+    
 }
 footer{
     border-top: 2px solid darkgray;
